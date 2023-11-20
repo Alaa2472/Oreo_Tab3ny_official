@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="out.css">
+    <title>Tailwind CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+  <div id="loading-screen">
+    <div class="loader"></div>
+  </div>
+       
+
+    
+    <section class="bg-">
+    <nav
+      class="container sticky top-0 z-10 max-w-full p-2 bg-opacity-80 shadow-sm shadow-slate-600 backdrop-blur-lg rounded-b-3xl bg-[#2196f3]"
+    >
+      <div class="flex items-center justify-between">
+        <div>
+          <a
+            class="flex items-center mx-3 my-1 md:ml-8 md:mr-10 text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+            href="#"
+          >
+            <img
+              src="./images/internet.png"
+              alt="Oreo logo"
+              width="45px"
+            /><span> </span>
+            <span class="ml-1 text-3xl font-bold text-blue-400"
+              >Dev<span class="text-yellow-200">Tools</span></span
+            >
+          </a>
+        </div>
+        <div class="items-center hidden space-x-12 md:mr-12 py90 md:flex">
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >Projects</a
+          >
+          <a
+            href="/login.html"
+            class="px-6 py-3 text-lg font-semibold duration-500 bg-blue-400 rounded-full text-slate-950 hover:bg-yellow-500"
+            >SignIn</a
+          >
+        </div>
+
+        <button id="mobile-btn" class="md:hidden">
+          <img src="./images/menu-5-line.png" class="mx-4 w-9" />
+        </button>
+      </div>
+      <div class="md:hidden">
+        <div
+          id="mobile-menu"
+          class="absolute flex flex-col items-center hidden py-8 space-x-1 space-y-4 font-bold duration-1000 ease-out border border-gray-300 rounded-lg bg-gray-50 left-14 right-14 drop-shadow-lg hover:transition-all"
+        >
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
+            >Projects</a
+          >
+          <a
+            href="/login.html"
+            class="px-6 py-3 text-lg font-semibold duration-500 bg-blue-400 rounded-full text-slate-950 hover:bg-yellow-500"
+            >SignIn</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section  id="Oreo-home">
+      <img src="/images/" />
+      <div
+        class="container flex flex-col items-center py-12 mb-12  md:pl-24 md:pr-4 md:py-6 md:flex-row-reverse "
+      >
+        <div
+          class="flex flex-col justify-center py-4 space-y-5 text-center md:w-1/2 md:text-right text-slate-900 md:-flex-row-reverse">
+          <h6 class="text-lg right-0 font-bold text-[#176db5]">!أهلا وسهلا بكم في تابعني</h6>
+          <p class="text-3xl font-bold md:text-5xl mt-6 ">
+            نحن
+            <span class="text-yellow-300 leading-10 "> منصه تعليمية</span> <span>و <span class="text-[#176db5]">منصه تفاعلية</span></span>
+          </p>
+          <p class="py-6 mx-2 text-center font-semibold md:mx-auto md:py-2 md:text-right">
+            .تابعني هي منصة تعليمية ووكالة مستقلة تقدم لك أفضل الخدمات الدراسية وأكثرها تميزًا
+          </p>
+          <button
+            class="self-center w-auto px-6 py-3 pb-3 font-sans text-xl font-bold duration-[350ms] rounded-full md:self-start text-slate-950 bg-[#2196f3] hover:bg-[#176db5] hover:shadow-sm hover:shadow-sky-300"
+          >
+            <a href="https://discord.com/invite/devtools-931536214228611102"
+              >Join our discord Server
+              <i
+                class="fa-solid fa-arrow-right-long fa-beat-fade"
+                style="color: #03173a"
+              ></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="pt-6 w-[30rem] mr-36  md:end-0">
+          <div class="scene">
+  <div class="forest">
+    <div class="tree tree1">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+    </div>
+
+    <div class="tree tree2">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree3">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree4">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree5">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree6">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree7">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+  </div>
+  
+  <div class="tent">
+      <div class="roof"></div>
+      <div class="roof-border-left">
+        <div class="roof-border roof-border1"></div>
+        <div class="roof-border roof-border2"></div>
+        <div class="roof-border roof-border3"></div>
+      </div>
+      <div class="entrance">
+        <div class="door left-door">
+          <div class="left-door-inner"></div>
+        </div>
+        <div class="door right-door">
+          <div class="right-door-inner"></div>
+        </div>
+      </div>
+    </div>
+
+  <div class="floor">
+      <div class="ground ground1"></div>
+      <div class="ground ground2"></div>
+    </div>
+  
+  <div class="fireplace">
+    <div class="support"></div>
+    <div class="support"></div>
+    <div class="bar"></div>
+    <div class="hanger"></div>
+    <div class="smoke"></div>
+    <div class="pan"></div>
+    <div class="fire">
+      <div class="line line1">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+      <div class="line line2">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+      <div class="line line3">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="time-wrapper">
+    <div class="time">
+      <div class="day"></div>
+      <div class="night">
+        <div class="moon"></div>
+        <div class="star star1 star-big"></div>
+        <div class="star star2 star-big"></div>
+        <div class="star star3 star-big"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="bg-gray-300">
+
+
+      <script> 
+        
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            document.getElementById("loading-screen").style.display = "none";
+
+            document.getElementById("content").style.display = "block";
+          }, 5000); // 3000 milliseconds (3 seconds)
+        });
+        
+      </script>
+      
+      <div>
+        <div class="my-32 text-center md:flex md:flex-row">
+          <div
+            class="flex flex-col justify-center mx-auto space-y-1 text-center md:w-1/2 md:text-left text-slate-900"
+          >
+            <h2 class="mx-4 mb-5 mt-5 text-4xl font-bold text-center">
+              Grow <span class="text-yellow-300">Your Brand</span> With Our
+              <span class="text-sky-300">Awesome</span> Digital Services
+            </h2>
+            <p class="mx-8 mb-3 text-center">
+              DevTools is not just a digital service provider. We are also a
+              COMPANY that is trying to help many people to achieve their goals.
+            </p>
+
+            <div
+              class="mx-9 md:mb-6 md:gap-y-2 md:mx-5 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4"
+            >
+              <div
+                class="items-center my-10 text-xl text-gray-700 border shadow-md md:flex md:flex-row md:my-5 rounded-3xl md:rounded-bl-3xl bg-sky-200 bg-opacity-40 shadow-sky-100"
+              >
+                <img
+                  src="./images/quality.png"
+                  alt="image"
+                  class="w-24 mx-auto my-3"
+                />
+                <div>
+                  <h1
+                    class="flex flex-col text-xl font-bold text-center text-black md:pr-5"
+                  >
+                    Quality
+                  </h1>
+                  <p
+                    class="pb-3 mx-2 text-lg font-normal text-center text-black md:pr-5"
+                  >
+                    we have so many profisional programers so we have high
+                    quality
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="items-center my-10 text-xl text-gray-700 border shadow-md md:flex md:flex-row md:my-5 rounded-3xl md:rounded-bl-3xl bg-sky-200 bg-opacity-40 shadow-sky-100"
+              >
+                <img
+                  src="./images/unique.png"
+                  alt="image"
+                  class="w-24 mx-auto my-3"
+                />
+                <div>
+                  <h1
+                    class="flex flex-col text-xl font-bold text-center text-black md:pr-5"
+                  >
+                    Uniqueness
+                  </h1>
+                  <p
+                    class="pt-3 pb-3 mx-2 text-lg font-normal text-center text-black md:pr-5"
+                  >
+                    Uniqueness is one of the core reasons that make us
+                    different.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="items-center my-10 text-xl text-gray-700 border shadow-md md:flex md:flex-row md:my-5 rounded-3xl md:rounded-bl-3xl bg-sky-200 bg-opacity-40 shadow-sky-100"
+              >
+                <img
+                  src="./images/innovation.png"
+                  alt="image"
+                  class="w-24 mx-auto my-3"
+                />
+                <div>
+                  <h1
+                    class="flex flex-col text-xl font-bold text-center text-black md:pr-5"
+                  >
+                    Innovation
+                  </h1>
+                  <p
+                    class="pt-3 pb-3 mx-2 text-lg font-normal text-center text-black md:pr-5"
+                  >
+                    Currently, we are one of the most innovative brands in the
+                    industry.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="items-center my-10 text-xl text-gray-700 border shadow-md md:flex md:flex-row md:my-5 rounded-3xl md:rounded-bl-3xl bg-sky-200 bg-opacity-40 shadow-sky-100"
+              >
+                <img
+                  src="./images/shopping.png"
+                  alt="image"
+                  class="w-24 mx-auto my-3"
+                />
+                <div>
+                  <h1
+                    class="flex flex-col text-xl font-bold text-center text-black md:pr-5"
+                  >
+                    Customer Satisfaction
+                  </h1>
+                  <p
+                    class="pt-3 pb-3 mx-2 text-lg font-normal text-center text-black md:pr-5"
+                  >
+                    We have the best customer satisfaction rate in the market.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center my-12 md:mt-20 ml-14 mr-14 md:flex-row sm:mb-24"
+          >
+            <div
+              class="relative flex flex-col w-56 text-black shadow-lg bg-sky-200 bg-opacity-30 shadow-sky-400 rounded-2xl bg-clip-border md:w-min"
+            >
+              <div
+                class="relative content-center h-auto mx-4 -mt-6 overflow-hidden text-white shadow-2xl rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 md:h-auto md:w-72"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="img-blur-shadow"
+                  layout="fill"
+                />
+              </div>
+              <div class="pt-6">
+                <h5
+                  class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+                >
+                  web/bot DevTools
+                </h5>
+                <p
+                  class="block mx-2 font-sans text-base antialiased font-light leading-relaxed text-inherit"
+                >
+                  The place is close to Barceloneta Beach and bus stop just 2
+                  min by walk and near to "Naviglio" where you can enjoy the
+                  main night life in Barcelona.
+                </p>
+              </div>
+              <div class="flex justify-center gap-8 md:p-6 md:pt-5 md:gap-12">
+                <a
+                  href="#facebook"
+                  class="block font-sans text-xl antialiased font-bold leading-relaxed text-transparent md:text-4xl bg-gradient-to-tr from-blue-600 to-blue-400 bg-clip-text"
+                >
+                  <i
+                    class="fa-brands fa-discord fa-bounce"
+                    style="color: #5583d3"
+                  ></i>
+                </a>
+                <a
+                  href="#twitter"
+                  class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent md:text-4xl bg-gradient-to-tr from-light-blue-600 to-light-blue-400 bg-clip-text"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-bounce"
+                    style="color: #b921a5"
+                  ></i>
+                </a>
+                <a
+                  href="#instagram"
+                  class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent md:text-4xl bg-gradient-to-tr from-purple-600 to-purple-400 bg-clip-text"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp fa-bounce"
+                    style="color: #52cb8d"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="container flex flex-col justify-center mx-auto md:my-10 md:mx-auto md:flex-row"
+      >
+        <div
+          class="relative flex flex-col items-center mx-8 text-black border shadow-lg w-72 h-96 rounded-xl bg-sky-200 group"
+        >
+          <div
+            class="flex flex-col w-auto h-auto overflow-hidden align-middle duration-1000 border shadow-md mask-hexagon rounded-xl group-hover:-mt-10 group-hover:mx-3 group-hover:mb-20"
+          >
+            <img src="./images/R.jpg" alt="" />
+          </div>
+          <div class="flex-col items-center justify-center mt-auto mb-5">
+            <p
+              class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug text-center text-blue-gray-900"
+            >
+              OUR PROJECTS
+            </p>
+            <h3
+              class="block mx-2 font-sans text-base antialiased font-light leading-relaxed text-center text-inherit"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit.
+            </h3>
+          </div>
+        </div>
+        <div
+          class="relative flex flex-col items-center w-56 mx-8 text-black border shadow-lg h-72 rounded-xl bg-sky-200 group"
+        >
+          <div
+            class="flex flex-col w-auto h-auto overflow-hidden align-middle duration-1000 border shadow-md rounded-xl group-hover:-mt-10 group-hover:mx-3 group-hover:mb-20"
+          >
+            <img src="./images/R.jpg" alt="" />
+          </div>
+          <div class="flex-col items-center justify-center mt-5">
+            <p
+              class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug text-center text-blue-gray-900"
+            >
+              OUR PROJECTS
+            </p>
+            <h3
+              class="block mx-2 font-sans text-base antialiased font-light leading-relaxed text-center text-inherit"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit.
+            </h3>
+          </div>
+        </div>
+        <div
+          class="relative flex flex-col items-center w-56 mx-8 text-black border shadow-lg h-72 rounded-xl bg-sky-200 group group-hover:"
+        >
+          <div
+            class="flex flex-col w-auto h-auto overflow-hidden align-middle duration-1000 border shadow-md rounded-xl group-hover:-mt-10 group-hover:mx-3 group-hover:mb-20"
+          >
+            <img src="./images/R.jpg" alt="" />
+          </div>
+          <div class="flex-col items-center justify-center mt-5">
+            <p
+              class="mb-2 font-sans text-xl antialiased font-semibold leading-snug text-center text-blue-gray-900"
+            >
+              OUR PROJECTS
+            </p>
+            <h3
+              class="mx-2 font-sans text-base antialiased font-light leading-relaxed text-center text-inherit"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <script src="./puplic/script.js"></script>
+  </body>
+</html>
