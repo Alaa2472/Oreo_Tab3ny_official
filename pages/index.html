@@ -15,248 +15,101 @@
     />
 
   </head>
-  <div id="loading-screen">
-    <div class="loader"></div>
-  </div>
-       
 
+  <body>
+                                                  <!--Pre Loader-->
     
-    <section class="bg-">
-    <nav
-      class="container sticky top-0 z-10 max-w-full p-2 bg-opacity-80 shadow-sm shadow-slate-600 backdrop-blur-lg rounded-b-3xl bg-[#2196f3]"
-    >
-      <div class="flex items-center justify-between">
-        <div>
-          <a
-            class="flex items-center mx-3 my-1 md:ml-8 md:mr-10 text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
-            href="#"
-          >
-            <img
-              src="./images/internet.png"
-              alt="Oreo logo"
-              width="45px"
-            /><span> </span>
-            <span class="ml-1 text-3xl font-bold text-blue-400"
-              >Dev<span class="text-yellow-200">Tools</span></span
-            >
-          </a>
-        </div>
-        <div class="items-center hidden space-x-12 md:mr-12 py90 md:flex">
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >About</a
-          >
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >Projects</a
-          >
-          <a
-            href="/login.html"
-            class="px-6 py-3 text-lg font-semibold duration-500 bg-blue-400 rounded-full text-slate-950 hover:bg-yellow-500"
-            >SignIn</a
-          >
-        </div>
-
-        <button id="mobile-btn" class="md:hidden">
-          <img src="./images/menu-5-line.png" class="mx-4 w-9" />
-        </button>
+      <div class="loader" id="loading-screen">
+        <div class="dash first"></div>
+        <div class="dash seconde"></div>
+        <div class="dash third"></div>
+        <div class="dash fourth"></div>
+    </div>
+    <div id="content">
+       
+                                        <!--section for index background-->
+    <section class="bg-[#e8f3fc]">
+      
+                                                <!--Nav Bar-->
+    <div class="navbar bg-[#bbdefb] shadow-md shadow-[#2196f3] rounded-b-3xl">
+  
+  <div class="navbar-start">
+    <a class="btn"></a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal  px-2.5">
+      <li><a class="text-xl font-bold">إشْتِرَاكَ</a></li>
+      <li tabindex="0">
+        <details>
+          <summary class="text-xl font-extrabold">تَسْجِيل</summary>
+          <ul class="p-2">
+            <li><a class="text-lg font-bold">تسجيل ولي الاب</a></li>
+            <li><a href="/login.html" class="text-lg font-bold">تسجيل العلق</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a class="text-xl font-extrabold">نَــبْــذَةِ</a></li>
+    </ul>
+  </div>
+      <div class="navbar-end">
+       <a class="btn btn-ghost text-xl"><span class="mr-1 text-3xl right-0 font-bold text-[#2196f3]">ٺــٱبــ<span class="text-yellow-200">؏ــڼــې</span></span></a>
+        
+        <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a class="text-xl font-bold">إشْتِرَاكَ</a></li>
+          <li>
+            <a class="text-xl font-bold">تَسْجِيل</a>
+            <ul class="p-2">
+              <li><a class="text-lg font-bold">تسجيل ولي الامر</a></li>
+              <li><a class="text-lg font-bold">تسجيل الطالب</a></li>
+            </ul>
+          </li>
+          <li><a class="text-xl font-bold">نَــبْذَةِ</a></li>
+        </ul>
       </div>
-      <div class="md:hidden">
-        <div
-          id="mobile-menu"
-          class="absolute flex flex-col items-center hidden py-8 space-x-1 space-y-4 font-bold duration-1000 ease-out border border-gray-300 rounded-lg bg-gray-50 left-14 right-14 drop-shadow-lg hover:transition-all"
-        >
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >About</a
-          >
-          <a
-            href="#"
-            class="text-lg font-semibold text-slate-950 hover:text-yellow-500"
-            >Projects</a
-          >
-          <a
-            href="/login.html"
-            class="px-6 py-3 text-lg font-semibold duration-500 bg-blue-400 rounded-full text-slate-950 hover:bg-yellow-500"
-            >SignIn</a
-          >
+      </div>
+      </div>
+                                                  <!--Mobile Nav Bar Menu-->
+      <div class="md:hidden">  
+        <div id="mobile-menu" class="absolute flex flex-col items-center hidden py-8 space-x-1 space-y-4 font-bold duration-1000 ease-out border border-gray-300 rounded-lg bg-gray-50 left-14 right-14 drop-shadow-lg hover:transition-all">
+          <a href="#" class="text-lg font-semibold text-slate-950 hover:text-yellow-500">Home</a>
+          <a href="#" class="text-lg font-semibold text-slate-950 hover:text-yellow-500">About</a>
+          <a href="#" class="text-lg font-semibold text-slate-950 hover:text-yellow-500">Projects</a>
+          <a href="/login.html" class="px-6 py-3 text-lg font-semibold duration-500 bg-blue-400 rounded-full text-slate-950 hover:bg-yellow-500">SignIn</a>
         </div>
       </div>
     </nav>
 
     <section  id="Oreo-home">
-      <img src="/images/" />
-      <div
-        class="container flex flex-col items-center py-12 mb-12  md:pl-24 md:pr-4 md:py-6 md:flex-row-reverse "
-      >
-        <div
-          class="flex flex-col justify-center py-4 space-y-5 text-center md:w-1/2 md:text-right text-slate-900 md:-flex-row-reverse">
-          <h6 class="text-lg right-0 font-bold text-[#176db5]">!أهلا وسهلا بكم في تابعني</h6>
+      <div class="container flex flex-col items-center py-12 mb-12  md:pl-24 md:pr-4 md:py-6 md:flex-row">
+        <div class="pt-6 w-80  md:mr-32 md:w-1/2 md:start-0">
+          <img class="" src="./images/book-lovers.png" alt="home" />
+        </div>
+                                 <!--Home Page hero text-->
+        <div class="flex flex-col md:right-0 content-start justify-start py-4 space-y-5 text-center md:w-1/2 md:text-right text-slate-900 md:-flex-row-reverse">
+          <h6 class="text-lg md:right-0 font-bold text-[#176db5]">!أهلا وسهلا بكم في تابعني</h6>
           <p class="text-3xl font-bold md:text-5xl mt-6 ">
-            نحن
-            <span class="text-yellow-300 leading-10 "> منصه تعليمية</span> <span>و <span class="text-[#176db5]">منصه تفاعلية</span></span>
+            نحن<span class="text-yellow-300 leading-10 "> منصه تعليمية</span> <span>و <span class="text-[#176db5]">منصه تفاعلية</span></span>
           </p>
           <p class="py-6 mx-2 text-center font-semibold md:mx-auto md:py-2 md:text-right">
             .تابعني هي منصة تعليمية ووكالة مستقلة تقدم لك أفضل الخدمات الدراسية وأكثرها تميزًا
           </p>
-          <button
-            class="self-center w-auto px-6 py-3 pb-3 font-sans text-xl font-bold duration-[350ms] rounded-full md:self-start text-slate-950 bg-[#2196f3] hover:bg-[#176db5] hover:shadow-sm hover:shadow-sky-300"
-          >
-            <a href="https://discord.com/invite/devtools-931536214228611102"
-              >Join our discord Server
-              <i
-                class="fa-solid fa-arrow-right-long fa-beat-fade"
-                style="color: #03173a"
-              ></i
-            ></a>
-          </button>
-        </div>
+<button class="btnh self-center w-auto px-6 py-3 pb-3 md:self-end">
+    <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+        <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+    </svg>
 
-        <div class="pt-6 w-[30rem] mr-36  md:end-0">
-          <div class="scene">
-  <div class="forest">
-    <div class="tree tree1">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-    </div>
-
-    <div class="tree tree2">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-
-    <div class="tree tree3">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-
-    <div class="tree tree4">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-
-    <div class="tree tree5">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-
-    <div class="tree tree6">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-
-    <div class="tree tree7">
-      <div class="branch branch-top"></div>
-      <div class="branch branch-middle"></div>
-      <div class="branch branch-bottom"></div>
-    </div>
-  </div>
-  
-  <div class="tent">
-      <div class="roof"></div>
-      <div class="roof-border-left">
-        <div class="roof-border roof-border1"></div>
-        <div class="roof-border roof-border2"></div>
-        <div class="roof-border roof-border3"></div>
-      </div>
-      <div class="entrance">
-        <div class="door left-door">
-          <div class="left-door-inner"></div>
-        </div>
-        <div class="door right-door">
-          <div class="right-door-inner"></div>
-        </div>
-      </div>
-    </div>
-
-  <div class="floor">
-      <div class="ground ground1"></div>
-      <div class="ground ground2"></div>
-    </div>
-  
-  <div class="fireplace">
-    <div class="support"></div>
-    <div class="support"></div>
-    <div class="bar"></div>
-    <div class="hanger"></div>
-    <div class="smoke"></div>
-    <div class="pan"></div>
-    <div class="fire">
-      <div class="line line1">
-        <div class="particle particle1"></div>
-        <div class="particle particle2"></div>
-        <div class="particle particle3"></div>
-        <div class="particle particle4"></div>
-      </div>
-      <div class="line line2">
-        <div class="particle particle1"></div>
-        <div class="particle particle2"></div>
-        <div class="particle particle3"></div>
-        <div class="particle particle4"></div>
-      </div>
-      <div class="line line3">
-        <div class="particle particle1"></div>
-        <div class="particle particle2"></div>
-        <div class="particle particle3"></div>
-        <div class="particle particle4"></div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="time-wrapper">
-    <div class="time">
-      <div class="day"></div>
-      <div class="night">
-        <div class="moon"></div>
-        <div class="star star1 star-big"></div>
-        <div class="star star2 star-big"></div>
-        <div class="star star3 star-big"></div>
-        <div class="star star4"></div>
-        <div class="star star5"></div>
-        <div class="star star6"></div>
-        <div class="star star7"></div>
-      </div>
-    </div>
-  </div>
-  </div>
+    <span class="text">انـْشـٸُ حـِسـَابَ</span>
+</button>
         </div>
       </div>
     </section>
     
 
-    <section class="bg-gray-300">
-
-
-      <script> 
-        
-        document.addEventListener("DOMContentLoaded", function () {
-          setTimeout(function () {
-            document.getElementById("loading-screen").style.display = "none";
-
-            document.getElementById("content").style.display = "block";
-          }, 5000); // 3000 milliseconds (3 seconds)
-        });
-        
-      </script>
-      
+    <section class="bg-gray-300">      
       <div>
         <div class="my-32 text-center md:flex md:flex-row">
           <div
@@ -501,6 +354,7 @@
       </div>
     </section>
     </section>
-    <script src="./puplic/script.js"></script>
+    <script src="/script.js"></script>
+    
   </body>
 </html>
