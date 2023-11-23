@@ -36,3 +36,7 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
 
 [languages.javascript.languageServer]
 start = "typescript-language-server --stdio"
+
+[deployment]
+publicDir = "/"
+deploymentTarget = "static"
