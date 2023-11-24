@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="out.css">
+    <title>Tailwind CSS</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -10,21 +13,95 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
-      integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
     
-<section class="bg-indigo-800" >
+
+    
+
+
+                                                  <!--Nav Bar-->
+      <nav class="flex backdrop-blur-md justify-between sticky top-0 z-20 items-center">
+    <div class="navbar bg-[#bbdefb] bg-opacity-90 shadow-md shadow-[#2196f3] rounded-b-3xl">
   
+  <div class="navbar-start md:ml-6">
+ <label class="bb8-toggle">
+      <input class="bb8-toggle__checkbox" type="checkbox">
+      <div class="bb8-toggle__container">
+        <div class="bb8-toggle__scenery">
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="tatto-1"></div>
+          <div class="tatto-2"></div>
+          <div class="gomrassen"></div>
+          <div class="hermes"></div>
+          <div class="chenini"></div>
+          <div class="bb8-toggle__cloud"></div>
+          <div class="bb8-toggle__cloud"></div>
+          <div class="bb8-toggle__cloud"></div>
+        </div>
+        <div class="bb8">
+          <div class="bb8__head-container">
+            <div class="bb8__antenna"></div>
+            <div class="bb8__antenna"></div>
+            <div class="bb8__head"></div>
+          </div>
+          <div class="bb8__body"></div>
+        </div>
+        <div class="artificial__hidden">
+          <div class="bb8__shadow"></div>
+        </div>
+      </div>
+ </label>
+  </div>
+    </nav>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal  px-2.5">
+      <li><a href="billing.html" class="text-xl font-bold">إشْتِرَاكَ</a></li>
+      <li tabindex="0">
+        <details>
+          <summary class="text-xl  font-extrabold">تَسْجِيل</summary>
+          <ul class="w-[12rem] p-2">
+            <li><a class="text-lg justify-end font-bold">تسجيل ولي الامر</a></li>
+            <li><a href="/login.html" class="text-lg justify-end font-bold">تسجيل الطالب</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a class="text-xl font-extrabold">نَــبْــذَةِ</a></li>
+    </ul>
+  </div>
+      <div class=" navbar-end">
+       <a class="btn btn-ghost text-xl"><span class="mr-1 text-3xl right-0 font-bold text-[#2196f3]">ٺــٱبــ<span class="text-yellow-200">؏ــڼــې</span></span></a>
+        <!--Mobile Nav Bar Menu-->
+        <div class="hidden dropdown dropdown-end">
+        <label tabindex="0" class="btn  swap swap-rotate">
+          <input type="checkbox" />
+          <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+  
+  <!-- close icon -->
+  <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+        </label>
+        </label>
+        <ul tabindex="0" class="menu menu-xl dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="billing.html" class="text-xl font-bold">إشْتِرَاكَ</a></li>
+          <li>
+            <p class="text-xl font-bold">تَسْجِيل</p>
+            <ul class="p-2">
+              <li><a href="login.html" class="text-lg font-bold">تسجيل ولي الامر</a></li>
+              <li><a class="text-lg font-bold">تسجيل الطالب</a></li>
+            </ul>
+          </li>
+          <li><a class="text-xl font-bold">نَــبْذَةِ</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>                                                
+            </nav>
   <style>
   
   .triangle{
@@ -118,6 +195,7 @@
     </div>
   </div>
   
+
 
  </section>
 

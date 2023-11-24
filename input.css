@@ -5,27 +5,29 @@
                 /*Home Hero botton*/
 .btnh {
   border: none;
-  width: 15em;
-  height: 5em;
+  width: 13em;
+  height: 4em;
   border-radius: 3em;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 12px;
-  background: #f7e372;
+  background: #001F3F;
   cursor: pointer;
   transition: all 350ms ease-in-out;
 }
 
 .sparkle {
-  fill: #AAAAAA;
+  fill: #FFFFFF;
+  animation: sparkle 2s ease-in-out infinite;
+  justify-content: start;
   transition: all 650ms ease;
 }
 
 .text {
   font-weight: 600;
-  color: #000000;
-  font-size: medium;
+  color: #FFFFFF;
+  font-size: large;
 }
 
 .btnh:hover {
@@ -38,11 +40,11 @@
 }
 
 .btnh:hover .text {
-  color: white;
+  color: #001F3F;
 }
 
 .btnh:hover .sparkle {
-  fill: white;
+  fill: #FFA500;
   transform: scale(1.2);
 } 
                /*Mobile botton*/
@@ -233,7 +235,7 @@ button {
 /* completely redone toggle and droid */
 
 .bb8-toggle {
-  --toggle-size: 6px;
+  --toggle-size: 8px;
   /* finally I removed the scale now everything depends on the font-size */
   /* --margin-top-for-head: 1.75em; */
   /* it's just in case 👆 */
@@ -1181,197 +1183,221 @@ button {
   background-color: #fff;
 }
 
-.loader {
-  --background: linear-gradient(135deg, #23C4F8, #275EFE);
-  --shadow: rgba(39, 94, 254, 0.28);
-  --text: #6C7486;
-  --page: rgba(255, 255, 255, 0.36);
-  --page-fold: rgba(255, 255, 255, 0.52);
-  --duration: 3s;
-  width: 200px;
-  height: 140px;
+.content {
+  width: 300px;
+  height: 300px;
   position: relative;
-  diplay: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.loader:before, .loader:after {
-  --r: -6deg;
+.content .planet {
+  width: 65%;
+  height: 65%;
+  background-color: #546c8c;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform-origin: center center;
+  box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
+  animation: planet 5s ease infinite alternate;
+  /* planet ring */
+  /* to cover the back of the ring */
+  /* planet spots */
+}
+
+@keyframes planet {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.content .planet .ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #bacbd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 33% center;
+  box-shadow: 2px -10px 0px rgba(0, 0, 0, 0.1), inset -5px -10px 0px rgba(0, 0, 0, 0.1);
+  animation: ring 3s ease infinite;
+  /* small ball */
+  /* inner ring */
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateX(110deg) rotateZ(0deg) translate(-50px, 5px);
+  }
+
+  100% {
+    transform: rotateX(110deg) rotateZ(360deg) translate(-50px, 5px);
+  }
+}
+
+.content .planet .ring:before {
   content: "";
   position: absolute;
-  bottom: 8px;
-  width: 120px;
-  top: 80%;
-  box-shadow: 0 16px 12px var(--shadow);
-  transform: rotate(var(--r));
+  width: 10px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #7ea1bf;
+  z-index: 2;
+  left: calc(0px - 5px);
+  box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
-.loader:before {
-  left: 4px;
+.content .planet .ring:after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: #7ea1bf;
+  box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.loader:after {
-  --r: 6deg;
-  right: 4px;
+.content .planet .cover-ring {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transform: translate(0px, -17px);
+  background-color: #546c8c;
+  z-index: 2;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
 }
 
-.loader div {
+.content .planet .spots {
   width: 100%;
   height: 100%;
-  border-radius: 13px;
-  position: relative;
-  z-index: 1;
-  perspective: 600px;
-  box-shadow: 0 4px 6px var(--shadow);
-  background-image: var(--background);
-}
-
-.loader div ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-}
-
-.loader div ul li {
-  --r: 180deg;
-  --o: 0;
-  --c: var(--page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  transform-origin: 100% 50%;
-  color: var(--c);
-  opacity: var(--o);
-  transform: rotateY(var(--r));
-  -webkit-animation: var(--duration) ease infinite;
-  animation: var(--duration) ease infinite;
+  z-index: 2;
 }
 
-.loader div ul li:nth-child(2) {
-  --c: var(--page-fold);
-  -webkit-animation-name: page-2;
-  animation-name: page-2;
+.content .planet .spots span {
+  width: 30px;
+  height: 30px;
+  background-color: #3c4359;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: inset -2px 3px 0px rgba(0, 0, 0, 0.3);
+  animation: dots 5s ease infinite alternate;
 }
 
-.loader div ul li:nth-child(3) {
-  --c: var(--page-fold);
-  -webkit-animation-name: page-3;
-  animation-name: page-3;
-}
-
-.loader div ul li:nth-child(4) {
-  --c: var(--page-fold);
-  -webkit-animation-name: page-4;
-  animation-name: page-4;
-}
-
-.loader div ul li:nth-child(5) {
-  --c: var(--page-fold);
-  -webkit-animation-name: page-5;
-  animation-name: page-5;
-}
-
-.loader div ul li svg {
-  width: 90px;
-  height: 120px;
-  display: block;
-}
-
-.loader div ul li:first-child {
-  --r: 0deg;
-  --o: 1;
-}
-
-.loader div ul li:last-child {
-  --o: 1;
-}
-
-.loader span {
-  display: block;
-  left: 0;
-  right: 0;
-  top: 100%;
-  margin-top: 20px;
-  text-align: center;
-  color: var(--text);
-}
-
-@keyframes page-2 {
+@keyframes dots {
   0% {
-    transform: rotateY(180deg);
-    opacity: 0;
+    box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.3);
   }
 
-  20% {
-    opacity: 1;
-  }
-
-  35%, 100% {
-    opacity: 0;
-  }
-
-  50%, 100% {
-    transform: rotateY(0deg);
+  100% {
+    box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.3);
   }
 }
 
-@keyframes page-3 {
-  15% {
-    transform: rotateY(180deg);
-    opacity: 0;
-  }
-
-  35% {
-    opacity: 1;
-  }
-
-  50%, 100% {
-    opacity: 0;
-  }
-
-  65%, 100% {
-    transform: rotateY(0deg);
-  }
+.content .planet .spots span:nth-child(1) {
+  top: 20px;
+  right: 50px;
 }
 
-@keyframes page-4 {
-  30% {
-    transform: rotateY(180deg);
-    opacity: 0;
+.content .planet .spots span:nth-child(2) {
+  top: 40px;
+  left: 50px;
+  width: 15px;
+  height: 15px;
+}
+
+.content .planet .spots span:nth-child(3) {
+  top: 80px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.content .planet .spots span:nth-child(4) {
+  top: 80px;
+  left: 90px;
+  width: 40px;
+  height: 40px;
+}
+
+.content .planet .spots span:nth-child(5) {
+  top: 160px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
+}
+
+.content .planet .spots span:nth-child(6) {
+  top: 165px;
+  left: 125px;
+  width: 10px;
+  height: 10px;
+}
+
+.content .planet .spots span:nth-child(7) {
+  top: 90px;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+}
+
+.content p {
+  color: #bacbd9;
+  font-size: 14px;
+  z-index: 2;
+  position: absolute;
+  bottom: -20px;
+  font-family: "Roboto Mono", monospace;
+  animation: text 4s ease infinite;
+  width: 100px;
+  text-align: center;
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(-30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
+  }
+
+  25% {
+    letter-spacing: 3px;
+    color: #7ea1bf;
   }
 
   50% {
-    opacity: 1;
+    transform: translateX(30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
   }
 
-  65%, 100% {
-    opacity: 0;
+  75% {
+    letter-spacing: 3px;
+    color: #7ea1bf;
   }
 
-  80%, 100% {
-    transform: rotateY(0deg);
-  }
-}
-
-@keyframes page-5 {
-  45% {
-    transform: rotateY(180deg);
-    opacity: 0;
-  }
-
-  65% {
-    opacity: 1;
-  }
-
-  80%, 100% {
-    opacity: 0;
-  }
-
-  95%, 100% {
-    transform: rotateY(0deg);
+  100% {
+    transform: translateX(-30px);
+    letter-spacing: 0px;
+    color: #bacbd9;
   }
 }
-
 
 #content {
   display: none;

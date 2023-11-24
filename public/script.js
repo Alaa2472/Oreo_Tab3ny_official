@@ -3,9 +3,8 @@
 
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
-        document.getElementById("loader").style.display = "none";
-
-        document.getElementById("content").style.display = "block";
+        document.getElementById ("content").style.display = "none";
+        document.getElementById("tent").style.display = "block";
       }, 2000); // 3000 milliseconds (3 seconds)
     });
 
