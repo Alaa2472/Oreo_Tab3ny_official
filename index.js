@@ -15,6 +15,6 @@ app.get("/", (req,res) => {
   res.sendFile(path.join("__dirname", "pages/index.html"))
 })
 
-app.listen(1000, () => {
- console.log("🚀 Shipping on port 3000")
+app.listen(8080, () => {
+ console.log("🚀 اوريو المشطشط بيعمل عظمه 8080")
 })

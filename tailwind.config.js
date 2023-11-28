@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{html,js}"],
+  content: ["./pages/**/*.{html,js}",
+           "node_modules/preline/dist/*.js",
+           ],
   mode: 'jit',
   theme: {
     extend: {
@@ -25,5 +27,12 @@ module.exports = {
     },
     
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),
+            require("tailwind-scrollbar")({ nocompatible: true }),
+            require("preline/plugin"),
+           
+           ],
+  variants: {
+        scrollbar: ['rounded']
+  }
 }
