@@ -371,13 +371,13 @@ button {
 
 /* REMASTERED */
 /* RTX-ON */
-/* completely redone toggle and droid */
+/* completely redone toggle and droid 
 
 .bb8-toggle {
   --toggle-size: 8px;
   /* finally I removed the scale now everything depends on the font-size */
   /* --margin-top-for-head: 1.75em; */
-  /* it's just in case 👆 */
+  /* it's just in case 👆 
   --toggle-width: 10.625em;
   --toggle-height: 5.625em;
   --toggle-offset: calc((var(--toggle-height) - var(--bb8-diameter)) / 2);
@@ -1160,8 +1160,7 @@ button {
   -o-transition: 0.8s;
   transition: 0.8s;
 }
-
-/* actions */
+/* actions 
 
 .bb8-toggle__checkbox:checked
   + .bb8-toggle__container
@@ -1312,7 +1311,7 @@ button {
 .bb8:hover .bb8__head::after {
   background-position: 0 0 !important;
                        }
-
+*/
 /************************************************PRELOADER************************************************/
 
 
